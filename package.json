@@ -1,16 +1,10 @@
 {
   "name": "complete-travel-agency-website-uz-voyage",
   "version": "1.0.0",
-  "description": "Travel Agency Website",
-  "main": "index.js",
+  "description": "Travel Agency website Uz-Voyage",
+  "main": "index.html",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "devserver": "live-server --browser=firefox",
-    "start": "npm-run-all --parallel devserver watch:sass",
-    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
-    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -23,10 +17,6 @@
   },
   "homepage": "https://github.com/mralimov/Complete-Travel-Agency-website-Uz-Voyage#readme",
   "devDependencies": {
-    "autoprefixer": "^10.2.5",
-    "concat": "^1.0.3",
-    "node-sass": "^5.0.0",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^8.3.1"
+    "node-sass": "^5.0.0"
   }
 }
