@@ -68,11 +68,13 @@ margin-left: auto;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    height: 4rem;
+    height: 2rem;
 }
 .topbar-row {
     display: flex;
     justify-content: space-around;
+    padding: 1rem;
+    
 }
 .topbar-left, .topbar-center, .topbar-right {
     display: flex;
@@ -80,4 +82,22 @@ margin-left: auto;
     justify-content: space-between;
     
     
+}
+
+.topbar-left {
+width: 20rem;
+display: flex;
+justify-content: space-around;
+}
+
+.topbar-center {
+    width: 35rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topbar-right {
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
 }
