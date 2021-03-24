@@ -22,7 +22,7 @@
 }
 html {
     box-sizing: border-box;
-    font-size: 62.5%; //default 16px 1rem = 10px 
+    /* font-size: 62.5%; //default 16px 1rem = 10px  */
 }
 
 body {
