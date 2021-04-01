@@ -6,110 +6,309 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/topbar.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
   </head>
   <body>
-    <div class="header">
-      <div class="header-container">
-        <div class="header-logo-icon">
-          <a href="#">
-            <svg class="header-logo"></svg>
-          </a>
+    <div class="header-container">
+      <!-- TOP HEADER SECTION -->
+      <div class="topbar">
+        <div class="container">
+          <div class="topbar-row">
+            <div class="topbar-nav topbar-left">
+              <div class="email">
+                <a href="#">
+                  <svg class="email__icon">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <span class="email__address" href="#"
+                    >contact@example.com</span
+                  >
+                </a>
+              </div>
+              <div class="telephone">
+                <svg class="email__icon">
+                  <use xlink:href="img/sprite.svg#icon-phone1"></use>
+                </svg>
+                <span href="#">(613) 000 0000</span>
+              </div>
+            </div>
+            <div class="topbar-nav topbar-center">
+              <div class="signin">
+                <svg class="signin__icon">
+                  <use xlink:href="img/sprite.svg#icon-home"></use>
+                </svg>
+                <span class="signin__text">Sign in</span>
+              </div>
+              <div class="signup">
+                <svg class="signup__icon">
+                  <use xlink:href="img/sprite.svg#icon-enter"></use>
+                </svg>
+                <span class="signup__text">Sign up</span>
+              </div>
+              <div class="cart">
+                <svg class="cart__icon">
+                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+                <span class="cart__text">Cart</span>
+              </div>
+              <div class="checkout">
+                <svg class="checkout__icon">
+                  <use xlink:href="img/sprite.svg#icon-credit-card"></use>
+                </svg>
+                <span class="checkout__text">Checkout</span>
+              </div>
+              <div class="myaccount">
+                <svg class="myaccount__icon">
+                  <use xlink:href="img/sprite.svg#icon-home"></use>
+                </svg>
+                <span class="myaccount__text">My account</span>
+              </div>
+            </div>
+            <ul class="topbar-nav topbar-right">
+              <div class="facebook">
+                <svg class="signin__icon">
+                  <use xlink:href="img/sprite.svg#icon-facebook2"></use>
+                </svg>
+              </div>
+              <div class="instagram">
+                <svg class="signin__icon">
+                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </div>
+              <div class="telegram">
+                <svg class="signin__icon">
+                  <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                </svg>
+              </div>
+            </ul>
+          </div>
         </div>
-        <div class="header-nav">
-          <ul class="mega-menu">
-            <li href="#" class="mega-menu__home">
-              <a href="#" class="mega-menu__home--link">
-                Home
-                <svg class="arrow-down"></svg>
-              </a>
-            </li>
-            <li class="mega-menu__tours">
-              <a href="#" class="mega-menu__tours--link">
-                Tours
-                <svg class="arrow-down"></svg>
-              </a>
-            </li>
-            <li class="mega-menu__pages">
-              <a href="#" class="mega-menu__pages--link">
-                Pages
-                <svg class="arrow-down"></svg>
-              </a>
-            </li>
-            <li class="mega-menu__contactus">
-              <a href="#" class="mega-menu__contactus--link">
-                Contact us
-                <svg class="arrow-down"></svg>
-              </a>
-            </li>
-            <li class="mega-menu__myaccount">
-              <a href="#" class="mega-menu__myaccount--link">
-                My account
-                <svg class="arrow-down"></svg>
-              </a>
-            </li>
-          </ul>
+      </div>
+
+      <!-- /////////////////NAvigation//////////////////////////////// -->
+
+      <nav class="nav">
+        <div class="container nav__container">
+          <div class="nav__logo__container">
+            <div class="nav__logo">
+              <img
+                src="img/uzvoyage__logo.png"
+                class="nav__logo__img"
+                alt="uz-voyage logo"
+              />
+            </div>
+            <span class="nav__logo__text">UZ-VOYAGE</span>
+          </div>
+
+          <div class="nav__list__container">
+            <ul class="mega__menu">
+              <li class="mega-menu__home"><a href="#">Home</a></li>
+              <li class="mega-menu__tours">
+                <a href="#">Tours</a>
+                <div class="mega__submenu__container">
+                  <div class="mega__submenu__row">
+                    <div class="mega__submenu--left">
+                      <h3 class="mega__tour__types--heading">Tour Types</h3>
+                      <div class="mega__submenu__border"></div>
+                      <ul>
+                        <li><a href="">Tour Type 1</a></li>
+                        <li><a href="">Tour Type 2</a></li>
+                        <li><a href="">Tour Type 3</a></li>
+                        <li><a href="">Tour Type 4</a></li>
+                        <li><a href="">Tour Type 5</a></li>
+                      </ul>
+                    </div>
+                    <div class="mega__submenu--middle">
+                      <h3 class="mega__groups__types--heading">Group Types</h3>
+                      <div class="mega__submenu__border"></div>
+                      <ul>
+                        <li><a href="">Location 1</a></li>
+                        <li><a href="">Location 2</a></li>
+                        <li><a href="">Location 3</a></li>
+                        <li><a href="">Location 4</a></li>
+                        <li><a href="">Location 5</a></li>
+                      </ul>
+                    </div>
+                    <div class="mega__submenu--right">
+                      <h3 class="mega__location--heading">Locations</h3>
+                      <div class="mega__submenu__border"></div>
+                      <ul>
+                        <li><a href="">Location 1</a></li>
+                        <li><a href="">Location 2</a></li>
+                        <li><a href="">Location 3</a></li>
+                        <li><a href="">Location 4</a></li>
+                        <li><a href="">Location 5</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="mega-menu__pages"><a href="#">Pages</a></li>
+              <li class="mega-menu__contactus"><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
         </div>
+      </nav>
+
+      <!-- //////////header image slider carousel////////// -->
+      <div class="carousel">
+        <div class="carousel__container">
+          <img
+            class="carousel__img"
+            src="./img/pexels-photo-1903702.jpeg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!--////////// searching filter//////////  -->
+
+      <div class="search__filter">
+        <form action="#" class="search__filter__form">
+          <fieldset>
+            <input type="hidden" name="searching-filter" value="single" />
+            <div class="col-2-of-4">
+              <div class="input-container">
+                <span class="input-icon"></span>
+                <select
+                  class="form-control"
+                  name="filter-location"
+                  id="location-selection"
+                >
+                  <option value>Location</option>
+                  <option value="1">Tashkent</option>
+                  <option value="2">Bukhara</option>
+                  <option value="3">Samarkand</option>
+                  <option value="4">Khiva</option>
+                  <option value="5">Khorazm</option>
+                  <option value="6">Karakalpakistan</option>
+                  <option value="7">Nukus</option>
+                  <option value="8">Fergana</option>
+                  <option value="9">Namangan</option>
+                  <option value="10">Andijan</option>
+                  <option value="11">Surkhandaryo</option>
+                  <option value="12">Qarshi</option>
+                  <option value="13">Navoi</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-1-of-4">
+              <div class="input-container">
+                <span class="input-icon"></span>
+                <input
+                  type="text"
+                  name="filter-date-from"
+                  class="form-control"
+                  value="01/01/2021"
+                  id="filter-from-date"
+                />
+              </div>
+            </div>
+            <div class="col-1-of-4">
+              <div class="input-container">
+                <span class="input-icon"></span>
+                <input
+                  type="text"
+                  name="filter-date-to"
+                  class="form-control"
+                  value="01/01/2021"
+                  id="filter-to-date"
+                />
+              </div>
+            </div>
+            <div class="col-1-of-4">
+              <div class="input-container">
+                <span class="input-icon"></span>
+                <select
+                  class="form-control"
+                  name="filter-location"
+                  id="location-selection"
+                >
+                  <option value>Tour Type</option>
+                  <option value="14">Adventoure Tours</option>
+                  <option value="15">Guided Tours</option>
+                  <option value="16">Self-Guided Tours</option>
+                  <option value="17">Sightseeing Tours</option>
+                  <option value="18">Family Friendly Tours</option>
+                  <option value="19">Children's Activities Tours</option>
+                  <option value="20">Historical Tours</option>
+                  <option value="21">Religious Tours</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-1-of-4">
+              <div class="input-container">
+                <span class="input-icon"></span>
+                <select
+                  class="form-control"
+                  name="filter-location"
+                  id="location-selection"
+                >
+                  <option value>Group Type</option>
+                  <option value="22">Adventoure Tours</option>
+                  <option value="23">Guided Tours</option>
+                  <option value="24">Self-Guided Tours</option>
+                  <option value="25">Sightseeing Tours</option>
+                  <option value="26">Family Friendly Tours</option>
+                  <option value="27">Children's Activities Tours</option>
+                  <option value="28">Historical Tours</option>
+                  <option value="29">Religious Tours</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-1-of-4">
+              <div class="input-container">
+                <span class="input-icon"></span>
+                <select
+                  class="form-control"
+                  name="filter-location"
+                  id="location-selection"
+                >
+                  <option value>Languages</option>
+                  <option value="30">English</option>
+                  <option value="31">French</option>
+                  <option value="32">German</option>
+                  <option value="33">Italian</option>
+                  <option value="34">Turkish</option>
+                  <option value="35">Russian</option>
+                  <option value="36">Korean</option>
+                  <option value="37">Chinese</option>
+                  <option value="38">Japanies</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-1-of-4">
+              <div class="input-container">
+                <button class="filter-btn-search">
+                  <svg class="search__icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-magnifying-glass"
+                    ></use>
+                  </svg>
+                  Search
+                </button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
       </div>
     </div>
 
-    <!-- <div class="top-bar">
-          <div class="top-bar__container">
-              <div class="top-bar__contact">
-                  <div class="top-bar__email">
-                      <a href="#">
-                        <svg class="email-icon"></svg>
-                        <p class="email-address">mralimov89@gmail.com</p>
-                        </a>    
-                    </div>
-                    <div class="top-bar__call">
-                        <a href="#">
-                            <svg class="contact-icon"></svg>
-                            <p class="contact-number">(613)724 9144</p>
-                        </a>
-                    </div>
-               </div>
-               <div class="top-bar-menu">
-                   <div class="top-bar__account">
-                       <a href="#">
-                            <svg class="sign-in-icon"></svg>
-                            <p class="signing-in">Sign in</p>
-                       </a>
-                       <a href="#">
-                            <svg class="sign-up-icon"></svg>
-                            <p class="signing-up">Sign up</p>
-                        </a>
-                        <a href="#">
-                            <svg class="cart-icon"></svg>
-                            <p class="cart-text">Cart</p>
-                        </a>
-                        <a href="#">
-                            <svg class="checkout-icon"></svg>
-                            <p class="checkout-text">Checkout</p>
-                        </a>
-                        <a href="#">
-                            <svg class="my-account-icon"></svg>
-                            <p class="my-account-text">My account</p>
-                        </a>
-                   </div>
-               </div>
-               <div class="top-bar-media">
-                    <a href="#">
-                       <svg class="facebook-icon"></svg>
-                    </a>
-                    <a href="#">
-                        <svg class="instagram-icon"></svg>
-                    </a>
-                    <a href="#">
-                        <svg class="telegram-icon"></svg>
-                    </a>
-                    <a href="#">
-                        <svg class="linkedin-icon"></svg>
-                    </a>
-                </div>
-            </div>
-            <div class="header">
-
-            </div>
-        </div> -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </body>
 </html>
