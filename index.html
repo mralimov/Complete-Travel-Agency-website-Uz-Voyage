@@ -7,18 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/topbar.css" />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <!-- Add the slick-theme.css if you want default styling -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
   </head>
   <body>
     <div class="header-container">
@@ -165,11 +153,55 @@
       <!-- //////////header image slider carousel////////// -->
       <div class="carousel">
         <div class="carousel__container">
-          <img
-            class="carousel__img"
-            src="./img/pexels-photo-1903702.jpeg"
-            alt=""
-          />
+          <figure>
+            <img
+              class="carousel__img"
+              src="./img/Carousel-IMG/Uzb- (2).jpg"
+              alt=""
+            />
+            <figcaption>
+              <div class="container">
+                <div class="slider-details">
+                  <p href="#" class="slider-detail-city--ancor">
+                    <svg class="slider-location-icon">
+                      <use xlink:href="img/sprite.svg# icon-location-pin"></use>
+                    </svg>
+                    <span class="slider-details-location" href="#"
+                      >Samarkand</span
+                    >
+                  </p>
+                  <h1><a href="#">Samarkand</a></h1>
+                  <ul class="slider-details-ul">
+                    <li class="slider-details-li">
+                      <svg class="location__icon">
+                        <use
+                          xlink:href="img/sprite.svg# icon-location-pin"
+                        ></use>
+                      </svg>
+                      <span>
+                        " Duration "
+                        <br />
+                        " 5 days 6 nights "
+                      </span>
+                    </li>
+                    <li class="slider-details-li">
+                      <svg class="location__icon">
+                        <use
+                          xlink:href="img/sprite.svg# icon-location-pin"
+                        ></use>
+                      </svg>
+                      <span>
+                        " Discount "
+                        <br />
+                        " 10% off "
+                      </span>
+                    </li>
+                  </ul>
+                  <span class="slider-price">$499.99</span>
+                </div>
+              </div>
+            </figcaption>
+          </figure>
         </div>
       </div>
 
@@ -179,9 +211,9 @@
         <form action="#" class="search__filter__form">
           <fieldset>
             <input type="hidden" name="searching-filter" value="single" />
-            <div class="col-2-of-4">
+            <div class="row-1-of-2">
               <div class="input-container">
-                <span class="input-icon"></span>
+                <span class="input-icon"> </span>
                 <select
                   class="form-control"
                   name="filter-location"
@@ -204,31 +236,35 @@
                 </select>
               </div>
             </div>
-            <div class="col-1-of-4">
+            <div class="row-1-of-3">
               <div class="input-container">
                 <span class="input-icon"></span>
                 <input
-                  type="text"
+                  type="date"
                   name="filter-date-from"
                   class="form-control"
                   value="01/01/2021"
+                  min="2021-04-01"
+                  max=""
                   id="filter-from-date"
                 />
               </div>
             </div>
-            <div class="col-1-of-4">
+            <div class="row-1-of-4">
               <div class="input-container">
                 <span class="input-icon"></span>
                 <input
-                  type="text"
+                  type="date"
                   name="filter-date-to"
                   class="form-control"
                   value="01/01/2021"
+                  min="2021-04-01"
+                  max=""
                   id="filter-to-date"
                 />
               </div>
             </div>
-            <div class="col-1-of-4">
+            <div class="row-2-of-1">
               <div class="input-container">
                 <span class="input-icon"></span>
                 <select
@@ -248,7 +284,7 @@
                 </select>
               </div>
             </div>
-            <div class="col-1-of-4">
+            <div class="row-2-of-2">
               <div class="input-container">
                 <span class="input-icon"></span>
                 <select
@@ -268,7 +304,7 @@
                 </select>
               </div>
             </div>
-            <div class="col-1-of-4">
+            <div class="row-2-of-3">
               <div class="input-container">
                 <span class="input-icon"></span>
                 <select
@@ -289,7 +325,7 @@
                 </select>
               </div>
             </div>
-            <div class="col-1-of-4">
+            <div class="row-2-of-4">
               <div class="input-container">
                 <button class="filter-btn-search">
                   <svg class="search__icon">
