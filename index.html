@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/topbar.css" />
   </head>
@@ -102,8 +112,10 @@
 
           <div class="nav__list__container">
             <ul class="mega__menu">
-              <li class="mega-menu__home"><a href="#">Home</a></li>
-              <li class="mega-menu__tours">
+              <li class="mega-menu__home mega-menu__list">
+                <a href="#">Home</a>
+              </li>
+              <li class="mega-menu__tours mega-menu__list">
                 <a href="#">Tours</a>
                 <div class="mega__submenu__container">
                   <div class="mega__submenu__row">
@@ -143,8 +155,12 @@
                   </div>
                 </div>
               </li>
-              <li class="mega-menu__pages"><a href="#">Pages</a></li>
-              <li class="mega-menu__contactus"><a href="#">Contact Us</a></li>
+              <li class="mega-menu__pages mega-menu__list">
+                <a href="#">Pages</a>
+              </li>
+              <li class="mega-menu__contactus mega-menu__list">
+                <a href="#">Contact Us</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -170,9 +186,11 @@
                       >Samarkand</span
                     >
                   </p>
-                  <h1><a href="#">Samarkand</a></h1>
+                  <h1>
+                    <a href="#">Samarkand</a>
+                  </h1>
                   <ul class="slider-details-ul">
-                    <li class="slider-details-li">
+                    <li class="slider-details-left">
                       <svg class="location__icon">
                         <use
                           xlink:href="img/sprite.svg# icon-location-pin"
@@ -184,7 +202,7 @@
                         " 5 days 6 nights "
                       </span>
                     </li>
-                    <li class="slider-details-li">
+                    <li class="slider-details-right">
                       <svg class="location__icon">
                         <use
                           xlink:href="img/sprite.svg# icon-location-pin"
@@ -197,7 +215,7 @@
                       </span>
                     </li>
                   </ul>
-                  <span class="slider-price">$499.99</span>
+                  <button class="slider-price">$499.99</button>
                 </div>
               </div>
             </figcaption>
@@ -213,7 +231,11 @@
             <input type="hidden" name="searching-filter" value="single" />
             <div class="row-1-of-2">
               <div class="input-container">
-                <span class="input-icon"> </span>
+                <span class="input-icon">
+                  <svg class="filter__icon">
+                    <use xlink:href="img/sprite.svg#icon-location"></use>
+                  </svg>
+                </span>
                 <select
                   class="form-control"
                   name="filter-location"
@@ -238,7 +260,12 @@
             </div>
             <div class="row-1-of-3">
               <div class="input-container">
-                <span class="input-icon"></span>
+                <span class="input-icon">
+                  <svg class="filter__icon">
+                    <use xlink:href="img/sprite.svg#icon-location"></use>
+                  </svg>
+                </span>
+                </span>
                 <input
                   type="date"
                   name="filter-date-from"
@@ -342,6 +369,192 @@
       </div>
     </div>
 
+    <!-- Best Services Section -->
+    <div class="best__services">
+      <div class="services">
+        <div class="container">
+          <div class="services-row">
+            <h2 class="services--header">
+              Our Best Services <br />
+
+              <small> Why we are the best for our client </small>
+            </h2>
+            <div class="col-md-1-of-3 left-side-services">
+              <div class="services-container">
+                <div class="service-icon">
+                  <span class="service-icon-span">
+                    <svg class="myaccount__icon-2">
+                      <use xlink:href="img/sprite.svg#icon-home"></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="service-context">
+                  <h3>Best destinations</h3>
+                  <p class="service-context-p">
+                    Find out what the best destinations in the World are as
+                    awarded by millions of real...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1-of-3 middle-side-services">
+              <div class="services-container">
+                <div class="service-icon">
+                  <span class="service-icon-span">
+                    <svg class="myaccount__icon-2">
+                      <use xlink:href="img/sprite.svg#icon-home"></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="service-context">
+                  <h3>Best destinations</h3>
+                  <p class="service-context-p">
+                    Find out what the best destinations in the World are as
+                    awarded by millions of real...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1-of-3 right-side-services">
+              <div class="services-container">
+                <div class="service-icon">
+                  <span class="service-icon-span">
+                    <svg class="myaccount__icon-2">
+                      <use xlink:href="img/sprite.svg#icon-home"></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="service-context">
+                  <h3>Best destinations</h3>
+                  <p class="service-context-p">
+                    Find out what the best destinations in the World are as
+                    awarded by millions of real...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Most popular packages -->
+    <section class="popular__packages">
+      <div class="travel-packages">
+        <div class="container">
+          <h2 class="services--header">
+            Our Most Popular Packages <br />
+
+            <small> Browse through our most popular tours! </small>
+          </h2>
+          <div class="popular__packages--row row">
+            <div class="popular__package--collumn">
+              <figure class="single__popular__tour--img"></figure>
+              <div class="single__popular__tour--details"></div>
+              <div class="single__popular__tour--book"></div>
+            </div>
+
+            <div class="popular__package--collumn">
+              <figure class="single__popular__tour--img"></figure>
+              <div class="single__popular__tour--details"></div>
+              <div class="single__popular__tour--book"></div>
+            </div>
+
+            <div class="popular__package--collumn">
+              <figure class="single__popular__tour--img"></figure>
+              <div class="single__popular__tour--details"></div>
+              <div class="single__popular__tour--book"></div>
+            </div>
+
+            <div class="popular__package--collumn">
+              <figure class="single__popular__tour--img"></figure>
+              <div class="single__popular__tour--details"></div>
+              <div class="single__popular__tour--book"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POPULAR DESTINATIONS -->
+    <section class="popular__destinations">
+      <div class="popular__destinations--padding">
+        <div class="container">
+          <div class="popular__destinations__row">
+            <h2 class="services--header">
+              Popular Destinations <br />
+
+              <small> Find out what the best destinations in the World </small>
+            </h2>
+            <div class="popular__destinations__img--box">
+              <div class="destinations__box">
+                <a href="#">
+                  <img src="" alt="" />
+                  <div class="badges"></div>
+                  <div class="img-box-content"></div>
+                </a>
+              </div>
+
+              <div class="destinations__box">
+                <a href="#">
+                  <img src="" alt="" />
+                  <div class="badges"></div>
+                  <div class="img-box-content"></div>
+                </a>
+              </div>
+
+              <div class="destinations__box">
+                <a href="#">
+                  <img src="" alt="" />
+                  <div class="badges"></div>
+                  <div class="img-box-content"></div>
+                </a>
+              </div>
+
+              <div class="destinations__box">
+                <a href="#">
+                  <img src="" alt="" />
+                  <div class="badges"></div>
+                  <div class="img-box-content"></div>
+                </a>
+              </div>
+
+              <div class="destinations__box">
+                <a href="#">
+                  <img src="" alt="" />
+                  <div class="badges"></div>
+                  <div class="img-box-content"></div>
+                </a>
+              </div>
+
+              <div class="destinations__box">
+                <a href="#">
+                  <img src="" alt="" />
+                  <div class="badges"></div>
+                  <div class="img-box-content"></div>
+                </a>
+              </div>
+
+              <div class="destinations__box">
+                <a href="#">
+                  <img src="" alt="" />
+                  <div class="badges"></div>
+                  <div class="img-box-content"></div>
+                </a>
+              </div>
+
+              <div class="destinations__box">
+                <a href="#">
+                  <img src="" alt="" />
+                  <div class="badges"></div>
+                  <div class="img-box-content"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
