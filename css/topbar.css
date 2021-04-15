@@ -82,16 +82,15 @@ svg {
 
 .topbar-left {
     display: flex;
-    width: 25%;
-    justify-content: space-around;
+    width: 40%;
     justify-items: center;
     padding-left: 2rem;  
     align-self: center;
   
 }
 .email {
+    margin-left: 4rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;   
     
 }
@@ -113,6 +112,10 @@ svg {
     justify-content: space-evenly;
     cursor: pointer;
     
+}
+
+.telephone {
+    margin-left: 2rem;
 }
 
 
