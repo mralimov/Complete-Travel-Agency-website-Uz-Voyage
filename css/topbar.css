@@ -755,7 +755,7 @@ h3 {
 
 .popular__package--collumn {
     width: 30rem;
-    height: 52rem;
+    height: 53rem;
     /* position: relative; */
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -813,7 +813,7 @@ color: #727272;
 margin: 0;
 }
 .single__popular__tour--book{
-    
+    height: 8rem;
     padding: 1.5rem 3rem;
     border-top: 1px solid #ebecea;
     font-size: 14px;
@@ -825,14 +825,70 @@ margin: 0;
 .tour-rating {
     display: table-cell;
     float: left;
+    width: 8.5rem;
+    height: 4rem;
 }
 
 .tour-rating-ul {
     margin-bottom: 0;
     padding-left: 0;
     list-style: none;
+    width: inherit;
+    height: inherit;
 }
 
+li {
+    display: inline-block;
+}
+
+.fa-star ,
+.fa-star-half-alt {
+    color: #fa2964;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 12px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+i {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.review {
+    font-size: 1.3rem;
+    display: block;
+    color: #666;
+}
+
+.tour-price {
+    height: 5rem;
+    float: right;
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #666;
+    letter-spacing: -0.5px;
+    display: inline-grid;
+    text-align: right;
+}
+
+.sale-price {
+    font-size: 1.4rem;
+    height: 2rem;
+}
+
+.strike-through {
+    color: #fa2964;
+    text-decoration: line-through;
+}
+
+.new-price {
+    float: left;
+    height: 3rem;
+}
 
 /* POPULAR DESTINATIONS */
 
