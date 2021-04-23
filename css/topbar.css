@@ -307,10 +307,113 @@ a {
 .carousel__img {
     height: 75vh;
     width: 100%;
+    left: 0;
+    top: 0;
 }
 
+.slider-details {
+    width: 80rem;
+    padding: 2.5rem;
+    position: relative;
+    background: rgba(0, 0, 0, 0.35);
+    }
 
+    
+figcaption {
+    position: absolute;
+    width: 100%;
+    height: 27rem;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1200;
+}
 
+.slider-detail {
+    width: 80rem;
+    padding: 2.5rem;
+    position: relative;
+}
+
+.slider-detail h1 {
+    animation-delay: 1s;
+}
+
+.slider-detail-city--ancor {
+    /* ;
+    ;
+    width: 75rem; */
+    height: 2.4rem;
+    font-weight: 800;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    margin: 0 0 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.slider-details-location {
+    width: 1.5rem;
+    height: 2.4rem;
+    color: #fa2964;
+    animation-delay: 3s;
+    line-height: 2.4rem;
+    top: 0;
+    left: 0;
+    
+}
+
+.slider-location-icon {
+height: 2.4rem;
+width: inherit;
+fill: rgb(221, 65, 99);
+margin: 0 0 1rem;
+top: 0;
+left: 0;
+}
+
+h1 {
+    font-size: 7rem;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 7rem;
+    margin: 0 0 5px 0;
+    letter-spacing: -2px;
+}
+
+.slider-details-ul {
+    width: 75rem;
+    height: 7rem;
+    margin: 15px 0 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.slider-details-left {
+    margin-right: 5rem;
+    font-size: 1.6rem;
+    color: white;
+    list-style: none;
+}
+
+.location__icon {
+width: 4rem;
+height: 4rem;
+}
+
+.slider-price {
+    font-size: 2rem;
+    border: none;
+    color: white;
+    background-color: #fa2964;
+    padding: 0.8rem 4rem;
+    border-radius: 1px;
+    line-height: normal;
+    position: relative;
+    font-weight: 700;
+    cursor: pointer;
+}
 /* Search filteration section styling */
 
 
@@ -319,6 +422,8 @@ a {
     height: 20rem;
     
 }
+
+
 
 .search__filter__form {
 padding: 3rem 1rem 1rem;
@@ -472,74 +577,6 @@ svg {
 }
 
 
-figcaption {
-    position: absolute;
-    width: 100%;
-    height: 27rem;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1200;
-}
-
-.slider-detail {
-    width: 80rem;
-    padding: 2.5rem;
-    position: relative;
-}
-
-.slider-detail h1 {
-    animation-delay: 1s;
-}
-
-.slider-detail-city--ancor {
-    margin: 0 0 1rem;
-    height: 2.8rem;
-    width: 75rem;
-    font-size: 1.4rem;
-    
-}
-
-.slider-details-location {
-    font-size: 14px;
-    font-weight: 800;
-    color: #fff;
-}
-
-.slider-location-icon {
-height: 1.4rem;
-width: 1.4rem;
-fill: rgb(221, 65, 99);
-}
-
-h1 {
-    font-size: 7rem;
-    font-weight: 700;
-    font-family: 'Josefin Sans', sans-serif;
-    line-height: 7rem;
-    margin: 0 0 5px 0;
-    letter-spacing: -2px;
-}
-
-.slider-details-ul {
-    width: 75rem;
-    height: 7rem;
-    margin: 15px 0 15px 0;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.slider-details-left {
-    margin-right: 5rem;
-    font-size: 1.6rem;
-    color: white;
-    list-style: none;
-}
-
-.location__icon {
-width: 4rem;
-height: 4rem;
-}
 
 /* //////////////BEST SERVICES///////////// */
 
@@ -717,34 +754,84 @@ h3 {
 }
 
 .popular__package--collumn {
-    width: 24rem;
+    width: 30rem;
     height: 52rem;
-    background-color: red;
     /* position: relative; */
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     display: flex;
     flex-direction: column;
+    border: 1px solid #e8e9ec;
 }
 
 .single__popular__tour--img {
 width: 100%;
-height: 16rem;
-background-color: #0a0a0a;
+height: 20rem;
 }
 
+.popular__package--img {
+    width: inherit;
+    height: inherit;
+    
+}
 .single__popular__tour--details{
     width: 100%;
-    height: 28rem;
-    background-color: grey;
+    height: 25rem;
+    padding: 2.5rem 3rem;
+    display: grid;
+    align-items: center;
+
 }
 
+.popular__package__tour__header {
+    margin-top: 1rem;
+font-size: 1.8rem;
+font-weight: 600;
+color: #666;
+margin: 0 0 1.5rem 0;
+font-family: inherit;
+width: 20rem;
+
+}
+
+.popular__package__tour__duration {
+    font-size: 1.2rem;
+}
+
+.tour__duration--icon {
+
+}
+
+.tour__duration--svg {
+
+}
+
+.popular__package__tour--description {
+width: 20rem;
+font-size: 1.4rem;
+color: #727272;
+margin: 0;
+}
 .single__popular__tour--book{
+    
+    padding: 1.5rem 3rem;
+    border-top: 1px solid #ebecea;
+    font-size: 14px;
+    display: table;
     width: 100%;
-    height: 8rem;
-    background-color: lawngreen;
+    background: #fafafa;
 }
 
+.tour-rating {
+    display: table-cell;
+    float: left;
+}
+
+.tour-rating-ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
 
 
 /* POPULAR DESTINATIONS */
@@ -760,6 +847,7 @@ background-color: #0a0a0a;
     height: 100%;
     padding: 6rem 0;
     background-color: #f7f7f7;
+    
 }
 
 .popular__destinations__row {
@@ -779,5 +867,5 @@ background-color: #0a0a0a;
 }
 
 .destinations__box {
-    background-color: #0a0a0a;
+    border: solid 1px black;
 }
