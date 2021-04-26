@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/topbar.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
@@ -168,65 +169,46 @@
       </nav>
 
       <!-- //////////header image slider carousel////////// -->
-      <div class="carousel">
-        <div class="carousel__container">
-          <figure>
-            <img
-              class="carousel__img"
-              src="./img/Carousel-IMG/Uzb- (2).jpg"
-              alt=""
-            />
-            <figcaption>
-              <div class="container">
-                <div class="slider-details">
-                  <p href="#" class="slider-detail-city--ancor">
-                  
-                    <span class="slider-details-location" href="#"
-                      >
-                      <svg class="slider-location-icon">
-                        <use 
-                        xlink:href="img/sprite.svg#icon-location2"
-                        ></use>
-                      </svg>
-                      </span
-                    >
-                    
-                    Samarkand
-                  </p>
-                  <h1>
-                    <a href="#">Samarkand City Tour</a>
-                  </h1>
-                  <ul class="slider-details-ul">
-                    <li class="slider-details-left">
-                      <svg class="location__icon">
-                        <use
-                          xlink:href="img/sprite.svg# icon-location-pin"
-                        ></use>
-                      </svg>
-                      <span>
-                        " Duration "
-                        <br />
-                        " 5 days 6 nights "
-                      </span>
-                    </li>
-                    <li class="slider-details-right">
-                      <svg class="location__icon">
-                        <use
-                          xlink:href="img/sprite.svg# icon-location-pin"
-                        ></use>
-                      </svg>
-                      <span>
-                        " Discount "
-                        <br />
-                        " 10% off "
-                      </span>
-                    </li>
-                  </ul>
-                  <button class="slider-price">$499.99</button>
-                </div>
-              </div>
-            </figcaption>
-          </figure>
+     
+      <div class="carousel__slider">
+        <div class="carousel__slides">
+          <input type="radio" name="radio-btn" id="radio-btn--1" />
+          <input type="radio" name="radio-btn" id="radio-btn--2" />
+          <input type="radio" name="radio-btn" id="radio-btn--3" />
+          <input type="radio" name="radio-btn" id="radio-btn--4" />
+          <input type="radio" name="radio-btn" id="radio-btn--5" />
+  
+          <div class="carousel__slide active">
+            <img src="./img/Carousel-IMG/Uzb- (2).jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/Carousel-IMG/Uzb- (3).jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/Carousel-IMG/Uzb- (4).jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/Carousel-IMG/Uzb- (5).jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/Carousel-IMG/Uzb- (6).jpg" alt="" />
+          </div>
+  
+          <div class="navigation-auto">
+            <div class="auto-btn--1"></div>
+            <div class="auto-btn--2"></div>
+            <div class="auto-btn--3"></div>
+            <div class="auto-btn--4"></div>
+            <div class="auto-btn--5"></div>
+          </div>
+        </div>
+  
+        <div class="navigation-manual--slide">
+          <label for="radio1" class="manual-btn--slide"></label
+          ><label for="radio2" class="manual-btn--slide"></label
+          ><label for="radio3" class="manual-btn--slide"></label
+          ><label for="radio4" class="manual-btn--slide"></label
+          ><label for="radio5" class="manual-btn--slide"></label>
         </div>
       </div>
 
