@@ -923,5 +923,54 @@ i {
 }
 
 .destinations__box {
-    border: solid 1px black;
+    border: 1px solid black;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    z-index: 90;
+    border-radius: 3px;
+    height: 20rem;
+    width: 100%;
+}
+
+.popular__destination--img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.55s;
+    top: 0;
+    left: 0;
+    transition: transform 0.35s ease-out;
+}
+
+.popular__destination--img:hover {
+transform: scale(1.3);
+}
+
+.badges {
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    right: 0;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0px;
+    overflow: hidden;
+    height: 100px;
+}
+
+.feature-tag {
+    background-color: #fa2964;
+    float: left;
+    transform: rotate(
+-45deg
+);
+    left: -6.7rem;
+    top: 1.7rem;
+    position: relative;
+    text-align: center;
+    width: 20rem;
+    font-size: 1.3rem;
+    margin: 0;
+    right: 1.5rem;
 }
