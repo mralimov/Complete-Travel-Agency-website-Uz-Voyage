@@ -947,7 +947,8 @@ transform: scale(1.3);
 
 .badges {
     position: absolute;
-    top: 0;
+    top: 9.8rem;
+    left: 1.5rem;
     z-index: 999;
     right: 0;
     width: 100%;
@@ -972,5 +973,5 @@ transform: scale(1.3);
     width: 20rem;
     font-size: 1.3rem;
     margin: 0;
-    right: 1.5rem;
 }
+
