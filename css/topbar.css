@@ -1080,3 +1080,34 @@ width: 100%;
     white-space: nowrap;
     vertical-align: baseline;
 }
+
+/* /////HEART ICON////// */
+.col-1-of-8-img--box .add-to-wishlist {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fa2964;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+.icon-element {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    font-size: 1.8rem;
+}
+
+.col-1-of-8 .col-1-of-8__body {
+    padding: 2.5rem 3rem;
+    min-height: auto;
+    flex-direction: 1 1 auto;
+}
+
