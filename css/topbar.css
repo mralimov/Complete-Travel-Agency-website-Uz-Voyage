@@ -1016,3 +1016,18 @@ p:last-child {
     margin-bottom: 0;
 }
 
+.most__popular_tours__row {
+    height:120rem;
+    height: 91rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 2rem;
+
+}
+
+.col-1-of-8 {
+    width: 30rem;
+    height: 42rem;
+    border: 1px solid black;
+}
