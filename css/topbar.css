@@ -1058,3 +1058,25 @@ width: 100%;
     transition: all 0.3s;
 }
 
+.col-1-of-8-img--box .tour-badge {
+    position: absolute;
+    background-color: #fa2964;
+    bottom: -1rem;
+    left: 2rem;
+    padding: 6px 1.1rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    font-weight: 500;
+    z-index: 1;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.tour-badge {
+    display: inline-block;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
