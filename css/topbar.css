@@ -923,13 +923,12 @@ i {
 }
 
 .destinations__box {
-    border: 1px solid black;
     overflow: hidden;
     margin-bottom: 1rem;
     z-index: 90;
     border-radius: 3px;
-    height: 20rem;
-    width: 100%;
+    height: 24rem;
+    width: 30rem;
 }
 
 .popular__destination--img {
